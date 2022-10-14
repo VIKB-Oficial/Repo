@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--here is the start of the head and the end of html/lengauge declaration-->
+<head>
+  <title>VIKB</title>
+  <meta charset="UTF-8"  name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="style.css" type="text/css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans+Condensed:wght@300;700&family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<!--here is the end of head and start of header-->
+<body>
+ <header>
+<nav>
+  <ul>
+    <li><a href="index.html">INICIO</a></li>
+    <li><a href="musica.html">MUSICA</a></li>
+    <li><a href="photos.html">PHOTOS</a></li>
+  </ul> 
+</nav>
+  <h1>VIKB</h1> 
+<div id="socialmedia">
+<a href="https://open.spotify.com/artist/5LqmSonnABpGs2TlCNaXg8">
+    <img src="spotify.png" alt="spotify" id="spotify"
+    Align="right" target="_blank"/> 
+<a href="https://www.youtube.com/channel/UChQaPa9dXhSwtl268sMcw8w">
+    <img src="youtube.png" alt="youtube" id="youtuve"
+    Align="right" target="_blank"/> 
+<a href="https://www.instagram.com/vikboficial/">
+    <img src="instagram.png"  alt="instagram" id="instagram"
+  Align="right" target="_blank"/>
+</div>
+    </a>
+
+  </header>
+<!--here is the end of header and start of ownwork!-->
+<div id="ownwork">
+<h2 class="work">Musica en Solitario</h2>
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <iframe width="1160" height="715" src="https://www.youtube.com/embed/D4hskTiPD6M" title="YouTube video player" style="width:100%"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <iframe width="1160" height="715" src="https://www.youtube.com/embed/UeMBQ0aQN3Y" title="YouTube video player" style="width:100%"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+ 
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <iframe wwidth="1160" height="715" src="https://www.youtube.com/embed/fyGDaP6V7f4" title="YouTube video player" style="width:100%"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+</div>  
+<!--here is the end of ownwork and star of groupwork!-->
+<div id="groupwork">
+  <h2 id="groupworkheather">Musica en Grupo</h2>
+  <div class="groupworkvideo">
+  <iframe width="100%" height="340" id="vone" src="https://www.youtube.com/embed/nZWseDKanQo" title="YouTube video player" frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+  <P id="one">The Sea Sons - Audio 1:55 (Studio Version) </P>
+  </div>
+  <div class="groupworkvideo">
+  <iframe width="100%" height="340" id="vtwo" src="https://www.youtube.com/embed/ki3Q1hORBfs" title="YouTube video player" frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+  <P id="two">The Sea Sons - ANYONE</P>
+</div>
+<div class="groupworkvideo">
+  <iframe width="100%" height="340" id="vthree" src="https://www.youtube.com/embed/6OG6O2tbVV4" title="YouTube video player" frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+  <p id="three">The Sea Sons - WIND SORROWS</p>
+</div>
+</div>
+<!--here is the start of the footer and the end of the body-->
+<footer> 
+  <form action="http://eg.com/Enviar.php">
+  <p id="formaw">Nombre Completo<p>
+  <p><input type="text" name="name" size="40" maxlength="40" /></p>
+  <p id="forma">Correo</p>
+  <p><input type="text" name="Email" size="40" maxlength="40" /></p>
+  <p id="forma">Mensgae</p>
+    <textarea name="comments" cols="38" rows="7">
+  </textarea>  
+<form action="http://eg.com/Enviar.php">
+ <input type="submit" value="submit" />
+</form>
+<div>
+<p id="contacta">Contacta Con Nosotros</p>
+<h6>2022&copy;Victor Bravo</h3>
+<p id="PhoneNumber">+34 633 293 068</p>  
+<p id="Email"> <a href="mailto:victorloubb@gmail.com">victorloubb@gmail.com</a></p>
+</div>
+</footer>
+ <!--here is the end of the footer and the start of Java-script-->
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+<!--here is the end of java-script and the start of clossen of web page-->
+</body>
+</html>

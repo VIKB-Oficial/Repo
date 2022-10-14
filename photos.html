@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--here is the start of the head and the end of html/lengauge declaration-->
+<head>
+  <title>VIKB</title>
+  <meta charset="UTF-8"  name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="style.css" type="text/css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans+Condensed:wght@300;700&family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<!--here is the end of head and start of header-->
+<body>
+ <header>
+<nav>
+  <ul>
+    <li><a href="index.html">INICIO</a></li>
+    <li><a href="musica.html">MUSICA</a></li>
+    <li><a href="photos.html">PHOTOS</a></li>
+  </ul> 
+</nav>
+  <h1>VIKB</h1> 
+<div id="socialmedia">
+<a href="https://open.spotify.com/artist/5LqmSonnABpGs2TlCNaXg8">
+    <img src="spotify.png" alt="spotify" id="spotify"
+    Align="right" target="_blank"/> 
+<a href="https://www.youtube.com/channel/UChQaPa9dXhSwtl268sMcw8w">
+    <img src="youtube.png" alt="youtube" id="youtuve"
+    Align="right" target="_blank"/> 
+<a href="https://www.instagram.com/vikboficial/">
+    <img src="instagram.png"  alt="instagram" id="instagram"
+  Align="right" target="_blank"/>
+</div>
+    </a>
+
+  </header>
+<!--here is the end of header and start of images!-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div class="enero">
+<H2>Photos </H2>
+   <p class="picturesp">Enero</p>
+<div class="row">
+    <div class="column">
+      <img src="1.JPG" class="myImg" alt="Es una foto del cantante en las diferentes canciones">
+      <img src="3.jpg" class="myImg" alt="Es una foto del cantante en las diferentes canciones">
+    </div>
+    <div class="column">
+      <img src="2.jpg" class="myImg" alt="Es una foto del cantante en las diferentes canciones">
+      <img src="4.jpg" class="myImg" alt="Es una foto del cantante en las diferentes canciones">
+    </div>
+  </div>
+  </div>
+<div class="enero">
+   <p class="picturesp">Febrero</p>
+<div class="row">
+    <div class="column">
+      <img src="5.JPG" class="myImg" alt="Es una foto del cantante en las diferentes canciones">
+      <img src="7.jpg" class="myImg" alt="Es una foto del cantante en las diferentes canciones">
+    </div>
+    <div class="column">
+      <img src="6.jpg" class="myImg" alt="Es una foto del cantante en las diferentes canciones">
+      <img src="8.jpg" class="myImg" alt="Es una foto del cantante en las diferentes canciones">
+</div>
+  </div>
+  </div>
+<div class="enero">
+   <p class="picturesp">Marzo</p>
+<div class="row">
+    <div class="column">
+      <img src="10.JPG" class="myImg" alt="Es una foto del cantante en las diferentes canciones">
+    </div>
+    <div class="column">
+      <img src="11.jpg" class="myImg" alt="Es una foto del cantante en las diferentes canciones">
+    </div>
+  </div>
+  </div>
+  <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+</div>
+
+<script>
+/// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = $('.myImg');
+var modalImg = $("#img01");
+var captionText = document.getElementById("caption");
+$('.myImg').click(function(){
+    modal.style.display = "block";
+    var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+    captionText.innerHTML = this.alt;
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+<!--here is the start of the footer and the end of the body-->
+<footer> 
+  <form action="http://eg.com/Enviar.php">
+  <p id="formaw">Nombre Completo<p>
+  <p><input type="text" name="name" size="40" maxlength="40" /></p>
+  <p id="forma">Correo</p>
+  <p><input type="text" name="Email" size="40" maxlength="40" /></p>
+  <p id="forma">Mensgae</p>
+    <textarea name="comments" cols="38" rows="7">
+  </textarea>  
+<form action="http://eg.com/Enviar.php">
+ <input type="submit" value="submit" />
+</form>
+<div>
+<p id="contacta">Contacta Con Nosotros</p>
+<h6>2022&copy;Victor Bravo</h3>
+<p id="PhoneNumber">+34 633 293 068</p>  
+<p id="Email"> <a href="mailto:victorloubb@gmail.com">victorloubb@gmail.com</a></p>
+</div>
+</footer>
+ <!--here is the end of the footer andthe start of clossen of web page-->
+</body>
+</html>
